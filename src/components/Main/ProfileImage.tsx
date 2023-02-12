@@ -9,7 +9,7 @@ const ProfileImageWrapper = styled.img`
   height: 270px;
   margin-bottom: 30px;
   border-radius: 50%;
-  border: 5px double #e9d5ca;
+  border: 7px double #011627;
 `
 const ProfileImage: FunctionComponent = function () {
   return <ProfileImageWrapper src={PROFILE_IMAGE_LINK} alt="Profile Image" />

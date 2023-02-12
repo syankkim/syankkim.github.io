@@ -9,7 +9,7 @@ const FooterWrapper = styled.div`
   font-size: 15px;
   text-align: center;
   line-height: 1.5;
-  color: #4d4c7d;
+  color: #687466;
 `
 
 const Footer: FunctionComponent = function () {
