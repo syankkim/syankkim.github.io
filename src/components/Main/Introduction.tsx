@@ -5,7 +5,7 @@ import ProfileImage from './ProfileImage'
 const Background = styled.div`
   width: 100%;
   //   background-image: linear-gradient(60deg, #e9d5ca 20%, #363062 100%);
-  background-color: #011627;
+  background-color: #707583;
 `
 const Wrapper = styled.div`
   display: flex;
@@ -15,18 +15,40 @@ const Wrapper = styled.div`
   width: 768px;
   height: 60px;
   margin: 150px auto;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 40px;
+    padding: 0 20px;
+    margin: 130px auto;
+  }
 `
 const SubTitle = styled.div`
-  margin: 70px 0 0 50px;
-  font-size: 20px;
-  font-weight: 400;
-  color: #2ec4b6;
+  margin: 30px 0 0 50px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #45362e;
+
+  @media (max-width: 768px) {
+    margin: 15px 0 0 20px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #f0e5de;
+  }
 `
 const Title = styled.div`
-  margin: 5px 0 0 50px;
+  margin: 10px 0 0 50px;
   font-size: 35px;
-  font-weight: 700;
-  color: #efffe9;
+  font-weight: 900;
+  color: #f0e5de;
+  border-bottom: solid 2px #f0e5de;
+
+  @media (max-width: 768px) {
+    margin: 10px 0 0 20px;
+    font-size: 25px;
+    color: #45362e;
+    border-bottom: solid 2px #45362e;
+  }
 `
 const Introduction: FunctionComponent = function () {
   return (
@@ -34,7 +56,11 @@ const Introduction: FunctionComponent = function () {
       <Wrapper>
         <ProfileImage />
         <div>
-          <SubTitle>Hello</SubTitle>
+          <SubTitle>
+            <div>Perfection is achieved,</div>
+            <div>not when there is nothing more to add,</div>
+            <div>But when there is nothing left to take away.</div>
+          </SubTitle>
           <Title>Backend developer syankkim.</Title>
         </div>
       </Wrapper>

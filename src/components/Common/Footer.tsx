@@ -10,6 +10,10 @@ const FooterWrapper = styled.div`
   text-align: center;
   line-height: 1.5;
   color: #687466;
+
+  @media (max-width: 768px) {
+    font-size: 13px;
+  }
 `
 
 const Footer: FunctionComponent = function () {
